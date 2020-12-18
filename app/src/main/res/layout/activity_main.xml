@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    tools:context=".MainActivity"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/skipLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as Guest"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/md_green_300">
+    </TextView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_above="@+id/signLinear"
+        android:layout_marginTop="60dp"
+        android:id="@+id/viewPagerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/signLinear"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/toSignup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/circlenotempty"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Create an Account"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray">
+            </TextView>
+
+            <TextView
+                android:id="@+id/toLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/md_green_500">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

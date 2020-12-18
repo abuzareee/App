@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "717137960711",
+    "firebase_url": "https://digital-plantation.firebaseio.com",
+    "project_id": "digital-plantation",
+    "storage_bucket": "digital-plantation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717137960711:android:2df5bde380af11067c6fa2",
+        "android_client_info": {
+          "package_name": "com.example.digiplantation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717137960711-b4gbr4vo8vbas1t1ep58uq9711347b22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZNy4hNNWt2icxeF-mAdkoSChJGe0uMh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717137960711-b4gbr4vo8vbas1t1ep58uq9711347b22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

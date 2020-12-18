@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45sp"
+                android:text="Register Now!"
+                android:textColor="#171717"
+                android:textStyle="bold"
+                android:gravity="center">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/usericon1">
+
+                </ImageView>
+
+                <CheckBox
+                    android:id="@+id/userRegCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/md_green_500"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#171717"
+                    android:layout_alignParentLeft="true">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/gardenericon">
+
+                </ImageView>
+
+                <CheckBox
+                    android:id="@+id/gardenerRegCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gardener"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/md_green_500"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#171717"
+                    android:layout_alignParentLeft="true">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/adminicon">
+
+                </ImageView>
+
+                <CheckBox
+                    android:id="@+id/adminRegCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:layout_gravity="center"
+                    android:buttonTint="@color/md_green_500"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#171717"
+                    android:layout_alignParentLeft="true">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_above="@+id/signUp"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="30sp"
+                android:textColor="#171717"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="your"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/md_green_500">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="20dp"
+                    android:padding="8dp"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:drawablePadding="15dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/empty_circle"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="20dp"
+                    android:padding="8dp"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:drawablePadding="15dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/empty_circle"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+
+
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:drawablePadding="15dp"
+                    android:paddingStart="20dp"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:inputType="textPassword|textNoSuggestions"
+                    android:background="@drawable/empty_circle"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:drawablePadding="15dp"
+                    android:paddingStart="20dp"
+                    android:padding="8dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:inputType="phone"
+                    android:background="@drawable/empty_circle"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp" />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I agree to have my name published on the Digital Plantation App"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:buttonTint="@android:color/darker_gray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_alignParentLeft="true">
+
+                </CheckBox>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_above="@+id/or"
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/circlenotempty"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/md_white"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
